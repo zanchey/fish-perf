@@ -1,0 +1,12 @@
+external_cmds.fish
+  rusage self:
+      user time: 140 ms
+       sys time: 312 ms
+        max rss: 6292 kb
+        signals: 0
+seq_echo.fish
+  rusage self:
+      user time: 20 ms
+       sys time: 0 ms
+        max rss: 5604 kb
+        signals: 0
