@@ -54,4 +54,4 @@ ninja -j3 fish >/dev/null; or fail "Build"
 # benchmark
 
 set -x NINJA_STATUS NOPRINT
-ninja benchmark 2>&1 | string match --invert --regex '^NOPRINT' | python3 upload.py UPSTREAM_SHA EXISTING_SHA
+ninja benchmark 2>&1 | string match --invert --regex '^NOPRINT' | ./upload-perf.py UPSTREAM_SHA EXISTING_SHA
